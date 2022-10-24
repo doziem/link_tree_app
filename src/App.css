@@ -1,0 +1,51 @@
+.app {
+  padding: 2rem;
+  /* width: 100%; */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header #profile__img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header #twitter {
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0.8rem 0;
+}
+
+#slack {
+  display: none;
+}
+.home {
+  height: 60vh;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.zuri-logo {
+  height: 24.74px;
+  width: 185.03px;
+}
+
+.zuri-title {
+  color: #667085;
+  font-size: 14px;
+}
+
+.ingress-logo {
+  height: 32px;
+  width: 132px;
+}
