@@ -1,5 +1,11 @@
+a {
+  text-decoration: none;
+  align-items: center;
+  color: #101828;
+}
+
 .app {
-  padding: 2rem;
+  margin: 2rem;
   /* width: 100%; */
 }
 
@@ -26,29 +32,36 @@
   display: none;
 }
 .home {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .link {
-  width: 90%;
-  margin: 15px 0;
-  padding: 14px;
+  width: 72rem;
+  height: 4.5rem;
+  margin: 1.5rem auto;
+  padding: 1.5rem 2rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.5rem;
+  background: #eaecf0;
   font-weight: 500;
-  color: #101828;
+}
+a:hover {
+  text-decoration: solid;
 }
 .home__social {
-  margin: 2rem 0 7rem 0;
+  margin: 1.5rem 0 3.5rem 0;
 }
 .slack-img {
   margin-right: 12px;
 }
 .footer {
   display: flex;
+  width: 100%;
+  height: 10rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -66,4 +79,34 @@
 .ingress-logo {
   height: 32px;
   width: 132px;
+}
+@media only screen and (max-width: 540px) {
+  #profile__img {
+    margin-top: 4rem;
+  }
+  .username {
+    font-size: 2rem;
+  }
+  .link {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+  }
+  .home__social {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .header {
+    margin-top: 4rem;
+  }
+  .link {
+    width: 98%;
+    /* margin: 1rem 0;
+    padding: 0.5rem 1rem; */
+  }
 }

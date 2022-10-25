@@ -5,7 +5,9 @@ const Header = () => {
   return (
     <div className="header">
       <img id="profile__img" src={profile} alt="profile" />
-      <p id="twitter">Annette Black</p>
+      <p className="username" id="twitter">
+        Annette Black
+      </p>
       <p id="slack">Annette Black</p>
     </div>
   );
