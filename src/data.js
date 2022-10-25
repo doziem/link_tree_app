@@ -22,7 +22,7 @@ const data = [
     {
         name: 'Background Check for Coders',
         id: 'pitch',
-        link: 'https://background.zuri.team'
+        link: ' https://background.zuri.team'
     },
     {
         name: 'Design Books',
