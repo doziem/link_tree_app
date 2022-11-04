@@ -29,6 +29,11 @@ const data = [
         id: 'book__design',
         link: 'https://books.zuri.team/design-rules '
     },
+    {
+        name: 'Contact',
+        id: 'contact',
+        link: '/contact'
+    },
 ]
 
 export default data

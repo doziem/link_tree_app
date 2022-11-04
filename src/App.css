@@ -81,7 +81,6 @@ a:hover {
   width: 132px;
 }
 
-
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .header {
     margin-top: 4rem;
