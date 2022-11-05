@@ -30,7 +30,7 @@ const data = [
         link: 'https://books.zuri.team/design-rules '
     },
     {
-        name: 'Contact',
+        name: 'Contact Me',
         id: 'contact',
         link: '/contact'
     },

@@ -1,14 +1,26 @@
+* {
+  font-family: 'Inter', sans-serif;
+}
 a {
   text-decoration: none;
   align-items: center;
   color: #101828;
 }
-
+h1 {
+  margin-top: 1.5rem;
+}
+p {
+  margin: 15px 5px;
+}
+::placeholder {
+  color: #667085;
+}
 .app {
   margin: 2rem;
   /* width: 100%; */
 }
 
+/* Header */
 .header {
   display: flex;
   flex-direction: column;
@@ -31,6 +43,7 @@ a {
 #slack {
   display: none;
 }
+/* Home */
 .home {
   height: 100%;
   width: 100%;
@@ -39,8 +52,82 @@ a {
   /* justify-content: center; */
   align-items: center;
 }
+
+/* Contact Form */
+
+.form {
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center; */
+  margin: 20px auto;
+  align-items: center;
+  width: 50%;
+}
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+label {
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+input[type='text'] {
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  width: 21.6vw;
+}
+
+input[type='email'] {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 48vw;
+}
+
+textarea {
+  width: 50vw;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+}
+
+.checkbox-control {
+  margin: 20px 0px;
+}
+.checkbox-control > label {
+  margin-left: 15px;
+}
+.first {
+  margin-right: 2.5rem;
+}
+
+#btn_submit {
+  background-color: #1570ef;
+  border-radius: 8px;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  width: 50vw;
+  margin-bottom: 6rem;
+}
+
+#btn_submit:focus {
+  border: none;
+}
+
+/* Button */
 .link {
-  width: 72rem;
+  width: 98%;
   height: 4.5rem;
   margin: 1.5rem auto;
   padding: 1.5rem 2rem;
@@ -58,6 +145,7 @@ a:hover {
 .slack-img {
   margin-right: 12px;
 }
+/* Footer */
 .footer {
   display: flex;
   width: 100%;
@@ -81,14 +169,90 @@ a:hover {
   width: 132px;
 }
 
+/* Media Query */
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+  .header {
+    margin-top: 4rem;
+  }
+  .link {
+    width: 100%;
+    /* margin: 1rem 0;
+    padding: 0.5rem 1rem; */
+  }
+  .form {
+    width: 90%;
+    margin-top: 5rem;
+  }
+
+  input[type='text'] {
+    width: 34vw;
+  }
+
+  input[type='email'] {
+    width: 81.4vw;
+  }
+
+  textarea {
+    width: 84vw;
+  }
+
+  .form-control {
+    margin-top: 2rem;
+  }
+
+  .checkbox-control {
+    margin: 2rem 0rem;
+  }
+
+  #btn_submit {
+    width: 84vw;
+  }
+  .footer {
+    width: 100%;
+    /* padding: 10px; */
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .header {
     margin-top: 4rem;
   }
   .link {
-    width: 98%;
+    width: 100%;
     /* margin: 1rem 0;
     padding: 0.5rem 1rem; */
+  }
+  .form {
+    width: 90%;
+    margin-top: 5rem;
+  }
+
+  input[type='text'] {
+    width: 34vw;
+  }
+
+  input[type='email'] {
+    width: 80vw;
+  }
+
+  textarea {
+    width: 83vw;
+  }
+
+  .form-control {
+    margin-top: 2rem;
+  }
+
+  .checkbox-control {
+    margin: 2rem 0rem;
+  }
+
+  #btn_submit {
+    width: 83vw;
+  }
+  .footer {
+    width: 100%;
+    /* padding: 10px; */
   }
 }
 
@@ -99,15 +263,46 @@ a:hover {
   .username {
     font-size: 2rem;
   }
+
+  .form {
+    width: 100%;
+    margin-top: 4rem;
+  }
+  .form-group {
+    display: block;
+  }
+  .form-control {
+    margin: 1.5rem 0rem;
+  }
+
+  .checkbox-control {
+    margin: 1.5rem 0rem;
+  }
   .link {
     width: 100%;
     margin: 1rem 0;
     padding: 0.5rem 1rem;
   }
-  .home__social {
-    display: none;
+  input[type='text'] {
+    width: 80vw;
   }
+  input[type='email'] {
+    width: 80vw;
+  }
+
+  textarea {
+    width: 86vw;
+  }
+  #btn_submit {
+    width: 86vw;
+  }
+
   .footer {
-    display: none;
+    display: block;
+    margin-top: 2rem;
+    height: 8rem;
+  }
+  .zuri-title {
+    margin: 16px;
   }
 }
