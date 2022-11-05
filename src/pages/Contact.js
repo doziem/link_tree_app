@@ -5,7 +5,7 @@ const Contact = () => {
   const [name, setName] = useState('');
   return (
     <form className="form">
-      <h1>Contatc Me</h1>
+      <h1>Contact Me</h1>
       <p>Hi there, contact me to ask me about anything you have in mind.</p>
       <div className="form-group">
         <div className="form-control first">
