@@ -3,13 +3,15 @@ import React from 'react';
 import { useState } from 'react';
 
 const Contact = () => {
-  const [name, setName] = useState('');
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [check, setCheck] = useState(false);
 
+  const name = 'Your Name';
+
+  //   checkbox handler
   const handleCheck = () => {
     setCheck((prev) => !prev);
   };
