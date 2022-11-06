@@ -3,39 +3,38 @@ import React from 'react';
 import { useState } from 'react';
 
 const Contact = () => {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [check, setCheck] = useState(false);
+  // const [firstName, setFirstName] = useState('');
+  // const [lastName, setLastName] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [message, setMessage] = useState('');
+  // const [check, setCheck] = useState(false);
+  const name = 'name';
 
-  const name = 'Your Name';
+  // //   checkbox handler
+  // const handleCheck = () => {
+  //   setCheck((prev) => !prev);
+  // };
 
-  //   checkbox handler
-  const handleCheck = () => {
-    setCheck((prev) => !prev);
-  };
-
-  //   submit handler
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const registerValues = {
-      first_name: firstName,
-      last_name: lastName,
-      email,
-      message,
-      check,
-    };
-    console.log(registerValues);
-    // function to submit form to database
-    setFirstName('');
-    setLastName('');
-    setEmail('');
-    setMessage('');
-  };
+  // //   submit handler
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const registerValues = {
+  //     first_name: firstName,
+  //     last_name: lastName,
+  //     email,
+  //     message,
+  //     check,
+  //   };
+  //   console.log(registerValues);
+  //   // function to submit form to database
+  //   setFirstName('');
+  //   setLastName('');
+  //   setEmail('');
+  //   setMessage('');
+  // };
 
   return (
-    <form onSubmit={handleSubmit} className="form">
+    <form className="form">
       <h1>Contact Me</h1>
       <p>Hi there, contact me to ask me about anything you have in mind.</p>
       <div className="form-group">
@@ -44,8 +43,8 @@ const Contact = () => {
           <input
             type="text"
             name="first_name"
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
+            // value={firstName}
+            // onChange={(e) => setFirstName(e.target.value)}
             placeholder="Enter your first name"
             id="first_name"
           />
@@ -54,8 +53,8 @@ const Contact = () => {
           <label htmlFor="last_name">Last name</label>
           <input
             type="text"
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
+            // value={lastName}
+            // onChange={(e) => setLastName(e.target.value)}
             name="last_name"
             placeholder="Enter your last name"
             id="last_name"
@@ -67,8 +66,8 @@ const Contact = () => {
         <label htmlFor="email">Email</label>
         <input
           id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          // value={email}
+          // onChange={(e) => setEmail(e.target.value)}
           type="email"
           name="email"
           placeholder="yourname@email.com"
@@ -80,8 +79,8 @@ const Contact = () => {
         <textarea
           type="text"
           name="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
+          // value={message}
+          // onChange={(e) => setMessage(e.target.value)}
           id="message"
           rows={6}
           placeholder="Send me a message and I'll reply you as soon as possible...'"
@@ -92,11 +91,11 @@ const Contact = () => {
         <input
           type="checkbox"
           name="name"
-          value={check}
-          onChange={handleCheck}
+          // value={check}
+          // onChange={handleCheck}
         />
         <label htmlFor="checkbox">
-          You agree to providing your data to {name} who may contact you.
+          You agree to providing your data to "{name}" who may contact you.
         </label>
       </div>
       <button type="submit" id="btn_submit">
