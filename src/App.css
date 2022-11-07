@@ -111,7 +111,7 @@ textarea {
   margin-right: 2.5rem;
 }
 
-#btn_submit {
+#btn__submit {
   background-color: #1570ef;
   border-radius: 8px;
   color: #fff;
@@ -121,7 +121,7 @@ textarea {
   margin-bottom: 6rem;
 }
 
-#btn_submit:focus {
+#btn__submit:focus {
   border: none;
 }
 
@@ -134,7 +134,7 @@ textarea {
   border: none;
   border-radius: 0.5rem;
   background: #eaecf0;
-  font-weight: 500;
+  font-weight: 700;
 }
 a:hover {
   text-decoration: solid;
