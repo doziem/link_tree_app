@@ -94,7 +94,7 @@ const Contact = () => {
           // value={check}
           // onChange={handleCheck}
         />
-        <label htmlFor="checkbox">
+        <label htmlFor="checkbox" className="checkbox">
           You agree to providing your data to "{name}" who may contact you.
         </label>
       </div>
