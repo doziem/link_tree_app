@@ -283,23 +283,35 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 541px) {
   #profile__img {
     margin-top: 4rem;
   }
   .username {
     font-size: 2rem;
   }
+  p {
+    width: 311px;
+  }
 
   .form {
-    width: 100%;
-    margin-top: 4rem;
+    /* width: 100vw; */
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 64px 0px;
+    /* gap: 48px; */
+    width: 375px;
+    height: 884px;
   }
   .form-group {
     display: flex;
-    /* align-items: center; */
+    width: 343px;
+
+    align-items: center;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
   }
   .form-control {
     display: flex;
@@ -313,13 +325,19 @@ a:hover {
     margin: 1rem 0;
     padding: 0.5rem 1rem;
   }
+  h1 {
+    width: 343px;
+    height: 44px;
+  }
   input[type='text'] {
     width: 343px;
     height: 44px;
     align-self: stretch;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   }
   input[type='email'] {
-    width: 343px;
+    width: 342px;
+    box-sizing: none;
     height: 44px;
     align-self: stretch;
   }
@@ -327,27 +345,27 @@ a:hover {
   textarea {
     width: 343px;
     height: 132px;
-    align-self: stretch;
-    flex-grow: 1;
   }
   #btn__submit {
     width: 343px;
-    height: 48px;
-    align-self: stretch;
+    height: 44px;
   }
-
+  /* .checkbox-control {
+    width: 80vw;
+  } */
   .footer {
-    display: block;
-    width: 375px;
-    height: 196px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 17px;
   }
   .zuri-title {
-    width: 213px;
+    /* width: 213px; */
     height: 20px;
     margin: 16px 0px;
   }
   .zuri-logo {
-    width: 138.77px;
+    /* width: 138.77px; */
     height: 18.55px;
   }
   .first {
