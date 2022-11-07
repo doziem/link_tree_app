@@ -1,5 +1,6 @@
 * {
   font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
@@ -7,7 +8,13 @@ a {
   color: #101828;
 }
 h1 {
-  margin-top: 1.5rem;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  width: 448px;
+  height: 44px;
 }
 p {
   margin: 15px 5px;
@@ -73,33 +80,46 @@ p {
   margin-top: 1rem;
 }
 label {
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   font-weight: 500;
 }
 input[type='text'] {
-  padding: 0.8rem;
+  padding: 10px 14px;
   border-radius: 0.5rem;
-  border: 1px solid #ccc;
-  width: 21.6vw;
+  border: 1px solid #d0d5dd;
+  width: 348px;
+  height: 44px;
 }
 
 input[type='email'] {
-  padding: 0.8rem;
-  border: 1px solid #ccc;
+  padding: 10px 14px;
+  border: 1px solid #d0d5dd;
   border-radius: 8px;
-  width: 48vw;
+  width: 720px;
+  height: 44px;
 }
 
 textarea {
-  width: 50vw;
-  padding: 12px;
+  width: 720px;
+  height: 132px;
+  padding: 12px 14px;
   box-sizing: border-box;
-  border: 1px solid #ccc;
+  border: 1px solid #d0d5dd;
   border-radius: 4px;
   font-size: 16px;
-  resize: none;
+}
+input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
 }
 
+.checkbox {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
 .checkbox-control {
   margin: 20px 0px;
   display: flex;
@@ -109,17 +129,19 @@ textarea {
   margin-left: 15px;
 }
 .first {
-  margin-right: 2.5rem;
+  margin-right: 24px;
 }
 
 #btn__submit {
   background-color: #1570ef;
   border-radius: 8px;
   color: #fff;
-  padding: 1rem;
+  border: 1px solid #1570ef;
+  padding: 12px, 20px;
   border: none;
-  width: 50vw;
-  margin-bottom: 6rem;
+  width: 720px;
+  height: 48px;
+  /* margin-bottom: ; */
 }
 
 #btn__submit:focus {
@@ -152,9 +174,10 @@ a:hover {
 /* Footer */
 .footer {
   display: flex;
+  padding: 48px 0px;
   width: 100%;
-  height: 10rem;
-  justify-content: space-between;
+  height: 160px;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -273,40 +296,61 @@ a:hover {
     margin-top: 4rem;
   }
   .form-group {
-    display: block;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    /* justify-content: center; */
   }
   .form-control {
-    margin: 1.5rem 0rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
   }
 
-  .checkbox-control {
-    margin: 1.5rem 0rem;
-  }
   .link {
     width: 100%;
     margin: 1rem 0;
     padding: 0.5rem 1rem;
   }
   input[type='text'] {
-    width: 80vw;
+    width: 343px;
+    height: 44px;
+    align-self: stretch;
   }
   input[type='email'] {
-    width: 80vw;
+    width: 343px;
+    height: 44px;
+    align-self: stretch;
   }
 
   textarea {
-    width: 86vw;
+    width: 343px;
+    height: 132px;
+    align-self: stretch;
+    flex-grow: 1;
   }
   #btn__submit {
-    width: 86vw;
+    width: 343px;
+    height: 48px;
+    align-self: stretch;
   }
 
   .footer {
     display: block;
-    margin-top: 2rem;
-    height: 8rem;
+    width: 375px;
+    height: 196px;
   }
   .zuri-title {
-    margin: 16px;
+    width: 213px;
+    height: 20px;
+    margin: 16px 0px;
+  }
+  .zuri-logo {
+    width: 138.77px;
+    height: 18.55px;
+  }
+  .first {
+    margin-right: 0px;
   }
 }
